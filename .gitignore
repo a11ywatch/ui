@@ -1,0 +1,6 @@
+types
+!src/types
+dist
+/node_modules
+storybook-static
+.DS_Store
