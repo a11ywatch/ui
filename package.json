@@ -1,10 +1,10 @@
 {
   "name": "@a11ywatch/ui",
-  "version": "1.10.5",
+  "version": "1.10.6",
   "description": "a11ywatch ui components",
   "main": "./dist/index.js",
   "types": "types/index.d.ts",
-  "author": "",
+  "author": "jeffmendez",
   "license": "MIT",
   "scripts": {
     "test": "jest",
@@ -12,7 +12,7 @@
     "postbuild": "npm run prepdist",
     "storybook": "start-storybook -p 6006 --ci",
     "build-storybook": "build-storybook -s public",
-    "release": "npm run build && npm publish --tag latest",
+    "release": "npm run build && npm publish --access=public --tag latest",
     "prepdist": "node ./config/prep-dist.js",
     "predeploy": "npm run build",
     "deploy": "cd dist && npm publish --tag beta",
@@ -38,7 +38,6 @@
     "@storybook/storybook-deployer": "^2.8.7",
     "@types/jest": "^25.2.1",
     "@types/styled-components": "^5.0.1",
-    "autoprefixer": "^9.7.5",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "css-loader": "^3.5.1",
@@ -65,7 +64,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "autoprefixer": "9.8.6"
   },
   "dependencies": {
     "styled-components": "^5.1.0",
