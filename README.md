@@ -9,10 +9,10 @@ re-usable tailwind react components to use for any project with accessibility in
 1. `npm install`
 2. `npm run storybook`
 
-
 ### Dependencies
 
 1. tailwind
+2. styled-components
 
 ## LICENSE
 
