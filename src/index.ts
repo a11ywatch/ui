@@ -4,4 +4,4 @@
  * LICENSE file in the root directory of this source tree.
  **/
 
-export { Button, Card } from "./components"
+export { Button, Card, Shape } from "./components"
