@@ -1,0 +1,1 @@
+export { ShapeProps } from "./types";
