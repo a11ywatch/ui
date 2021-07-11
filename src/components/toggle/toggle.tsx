@@ -24,7 +24,10 @@ export const ToggleWrapper: FunctionComponent<
           className="sr-only"
           onClick={onClick}
         />
-        <div className="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+        <div
+          className="w-10 h-4 bg-gray-400 rounded-full shadow-inner"
+          style={{ backgroundColor: "gray" }}
+        ></div>
         <div
           className={`dot absolute w-6 h-6 bg-white rounded-full shadow left-1 -top-1 transition`}
           style={{ top: "-0.3rem" }}
