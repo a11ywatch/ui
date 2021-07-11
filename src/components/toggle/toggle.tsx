@@ -27,6 +27,7 @@ export const ToggleWrapper: FunctionComponent<
         <div className="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
         <div
           className={`dot absolute w-6 h-6 bg-white rounded-full shadow left-1 -top-1 transition`}
+          style={{ top: "-0.3rem" }}
         ></div>
       </div>
       <div className="ml-4 text-white-700 font-medium">
