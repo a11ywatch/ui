@@ -16,7 +16,7 @@ export const ToggleWrapper: FunctionComponent<
   }
 > = ({ onClick, active, textActive = "Yearly", textInactive = "Monthly" }) => (
   <div className="py-4">
-    <label htmlFor="toogleA" className="flex items-center cursor-pointer">
+    <div className="flex items-center cursor-pointer">
       <div className="relative">
         <input
           id="toogleA"
@@ -33,10 +33,10 @@ export const ToggleWrapper: FunctionComponent<
           style={{ top: "-0.3rem" }}
         ></div>
       </div>
-      <div className="ml-4 text-white-700 font-medium">
+      <label className="ml-4 text-white-700 font-medium" htmlFor="toogleA">
         {active ? textActive : textInactive}
-      </div>
-    </label>
+      </label>
+    </div>
   </div>
 );
 
