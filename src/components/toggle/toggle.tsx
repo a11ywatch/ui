@@ -10,34 +10,22 @@ import { HtmlProps } from "../../common";
 
 export const ToggleWrapper: FunctionComponent<
   HtmlProps & {
-    active?: boolean;
     textActive?: string;
-    textInactive?: string;
+    onClick?(x?: any): any;
   }
-> = ({ onClick, active, textActive = "Yearly", textInactive = "Monthly" }) => (
-  <div className="py-4">
-    <div className="flex items-center cursor-pointer">
-      <div className="relative">
-        <input
-          id="toogleA"
-          type="checkbox"
-          className="sr-only"
-          onClick={onClick}
-        />
-        <div
-          className="w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-          style={{ backgroundColor: "gray" }}
-        ></div>
-        <div
-          className={`dot absolute w-6 h-6 bg-white rounded-full shadow left-1 -top-1 transition`}
-          style={{ top: "-0.3rem" }}
-        ></div>
-      </div>
-      <label className="ml-4 text-white-700 font-medium" htmlFor="toogleA">
-        {active ? textActive : textInactive}
-      </label>
-    </div>
-  </div>
+> = ({ onClick, textActive = "Yearly" }) => (
+  <label
+    className="ml-4 text-white-700 font-medium text-center text-lg inline-flex items-center py-4"
+    htmlFor="toogleA"
+  >
+    <input
+      id="toogleA"
+      type="checkbox"
+      onClick={onClick}
+      className={"h-5 w-5 text-gray-600 mr-2"}
+    />
+    {textActive}
+  </label>
 );
 
 export const Toggle = styled(ToggleWrapper)``;
