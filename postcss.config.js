@@ -3,7 +3,7 @@ module.exports = {
   variants: {},
   plugins: [
     require("postcss-import"),
-    require("tailwindcss")("./tailwindcss-config.js"),
+    require("tailwindcss")("./tailwind.config.js"),
     require("autoprefixer"),
     ...(process.env.NODE_ENV === "production"
       ? [
