@@ -4,21 +4,17 @@
  * LICENSE file in the root directory of this source tree.
  **/
 
-import React, { FunctionComponent } from "react"
-import styled from "styled-components"
-import { HtmlProps } from "../../common"
+import React, { FunctionComponent } from "react";
+import { HtmlProps } from "../../common";
 
-export const BoxWrapper: FunctionComponent<HtmlProps> = ({
+export const Box: FunctionComponent<HtmlProps> = ({
   children,
   className,
-  style
+  style,
 }) => (
-  <div style={style} className={className}>
-    {children}
+  <div className="py-7">
+    <div style={style} className={className}>
+      {children}
+    </div>
   </div>
-)
-
-export const Box = styled(BoxWrapper)`
-  margin-top: 32px;
-  margin-bottom: 32px;
-`
+);
