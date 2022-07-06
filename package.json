@@ -1,6 +1,6 @@
 {
   "name": "@a11ywatch/ui",
-  "version": "1.12.4",
+  "version": "1.2.0",
   "description": "a11ywatch ui components",
   "main": "./dist/index.js",
   "types": "types/index.d.ts",
@@ -64,9 +64,9 @@
     "webpack-cli": "^3.3.11"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-is": "^17.0.2",
+    "react": "*",
+    "react-dom": "*",
+    "react-is": "*",
     "styled-components": "^5.0.1"
   },
   "dependencies": {
