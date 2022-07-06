@@ -15,7 +15,7 @@ export const Shape: FunctionComponent<ShapeProps> = ({
   const props = {
     onClick,
     "aria-label": ariaLabel,
-    className: `${cl} ${className}`,
+    className: `bg-[#5c6bc0] font-bold font-lg text-white ${cl} ${className}`,
   };
 
   return React.createElement(onClick ? "button" : "div", props, children);

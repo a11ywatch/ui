@@ -1,6 +1,6 @@
 ## ui
 
-[![A11yWatch](https://circleci.com/gh/A11yWatch/ui.svg?style=svg)](https://circleci.com/gh/A11yWatch/ui)
+[![A11yWatch](https://circleci.com/gh/a11ywatch/ui.svg?style=svg)](https://circleci.com/gh/a11ywatch/ui)
 
 accessibility first tailwind react components to use [story-book](https://a11ywatch.github.io/ui).
 

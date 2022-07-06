@@ -1,15 +1,8 @@
-/*
- * Copyright (c) A11yWatch, LLC. and its affiliates.
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- **/
-
 import path from "path";
 
 module.exports = {
   stories: ["../src/**/*.stories.(ts|tsx|js|jsx)"],
   addons: [
-    "@storybook/preset-typescript",
     "@storybook/addon-a11y",
     "@storybook/addon-actions",
     "@storybook/addon-links",
@@ -27,7 +20,6 @@ module.exports = {
             localIdentName: "[name]__[local]___[hash:base64:5]",
           },
         },
-        require.resolve("sass-loader"),
       ],
     });
 
@@ -36,7 +28,6 @@ module.exports = {
       use: [
         "style-loader",
         "css-loader",
-        "sass-loader",
         {
           loader: "postcss-loader",
           options: {

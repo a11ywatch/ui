@@ -1,19 +1,12 @@
-/*
- * Copyright (c) A11yWatch, LLC. and its affiliates.
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- **/
-
 import React, { FunctionComponent, useState, useCallback } from "react";
 import { Switch } from "@headlessui/react";
-import styled from "styled-components";
 import { HtmlProps } from "../../common";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const ToggleWrapper: FunctionComponent<
+export const Toggle: FunctionComponent<
   HtmlProps & {
     active?: boolean;
     darkMode?: boolean;
@@ -63,5 +56,3 @@ export const ToggleWrapper: FunctionComponent<
     </Switch.Group>
   );
 };
-
-export const Toggle = styled(ToggleWrapper)``;
