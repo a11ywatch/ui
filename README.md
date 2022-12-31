@@ -12,7 +12,6 @@ accessibility first tailwind react components to use [story-book](https://a11ywa
 ### Dependencies
 
 1. tailwind
-2. styled-components
 
 ## LICENSE
 
